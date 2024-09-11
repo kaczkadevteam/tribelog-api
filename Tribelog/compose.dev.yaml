@@ -20,6 +20,8 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=admin
+    volumes:
+      - ./docker/pgadmin/servers.json:/pgadmin4/servers.json
 
 volumes:
   db_data:
